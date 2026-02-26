@@ -1,0 +1,68 @@
+{
+	"git.openRepositoryInParentFolders": "always",
+	"window.commandCenter": false,
+	"workbench.layoutControl.enabled": false,
+	"editor.rulers": [180],
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+
+	"notebook.defaultFormatter": "esbenp.prettier-vscode",
+	"notebook.formatOnSave.enabled": true,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"workbench.activityBar.location": "top",
+	"editor.fontFamily": "'JetBrains Mono', 'monospace', monospace",
+	"editor.tabSize": 2,
+	"editor.fontSize": 12,
+	"editor.linkedEditing": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+
+	"editor.lineHeight": 1.8,
+	"editor.minimap.enabled": false,
+	"workbench.startupEditor": "newUntitledFile",
+	"editor.fontLigatures": true,
+	"workbench.editor.labelFormat": "short",
+	"explorer.compactFolders": false,
+	"editor.semanticHighlighting.enabled": false,
+	"breadcrumbs.enabled": false,
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		".env": "*",
+		"app.html": "*",
+		"+layout.svelte": "+layout*, layout*",
+		"+page.svelte": "+page*, page*"
+	},
+	"files.exclude": {
+		"**/node_modules": true,
+		"**/project.inlang": true,
+		"**/.svelte-kit": true,
+		"**/src/lib/paraglide": true
+	},
+	"window.confirmSaveUntitledWorkspace": false,
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"files.associations": {
+		"*.tsx": "typescriptreact"
+	},
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode"
+	},
+	"svelte.enable-ts-plugin": true,
+	"diffEditor.ignoreTrimWhitespace": true,
+	"editor.inlineSuggest.suppressSuggestions": true,
+	"[oraclesql]": {
+		"editor.suggest.showSnippets": true,
+		"editor.quickSuggestions": {
+			"comments": "on",
+			"strings": "on",
+			"other": "on"
+		}
+	},
+	"symbols.hidesExplorerArrows": false,
+	"workbench.iconTheme": "symbols"
+}

@@ -1,0 +1,48 @@
+@font-face {
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 200 1000;
+	font-display: swap;
+	src: url('$lib/assets/fonts/Nunito-Variable.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Nunito';
+	font-style: italic;
+	font-weight: 200 1000;
+	font-display: swap;
+	src: url('$lib/assets/fonts/Nunito-Italic-Variable.woff2') format('woff2');
+}
+
+:root {
+	--font-main: 'Nunito', sans-serif;
+}
+
+body {
+	font-family: var(--font-main);
+	font-weight: 400;
+	color: var(--text-primary);
+	font-size: var(--md);
+}
+
+strong {
+	font-weight: 800;
+	line-height: 1.2;
+	margin: 0;
+	color: inherit;
+	transition: color var(--fast);
+}
+
+small {
+	font-size: var(--sm);
+	color: var(--text-secondary);
+}
+
+strong,
+b {
+	font-weight: 700;
+}
+
+input {
+	color: var(--text-primary);
+}

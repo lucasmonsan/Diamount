@@ -1,0 +1,63 @@
+:root {
+	--base: clamp(1rem, 1vw + 1rem, 1.5rem);
+
+	--xxxs: calc(var(--base) * 0.2);
+	--xxs: calc(var(--base) * 0.4);
+	--xs: calc(var(--base) * 0.6);
+	--sm: calc(var(--base) * 0.8);
+	--md: var(--base);
+	--lg: calc(var(--base) * 1.25);
+	--xl: calc(var(--base) * 1.5);
+	--xxl: calc(var(--base) * 1.75);
+	--xxxl: calc(var(--base) * 2);
+	--xxxxl: calc(var(--base) * 2.5);
+
+	--fast: ease-in-out 0.125s;
+	--normal: ease-in-out 0.25s;
+	--slow: ease-in-out 0.375s;
+
+	--radius: 0.125rem;
+
+	--gap-1: var(--xxxs);
+	--gap-2: var(--xxs);
+
+	--padd-page: var(--sm);
+	--padd-component: var(--xs);
+
+	--border-width: 2px;
+	--border: solid var(--border-width);
+
+	--z-bg: 0;
+	--z-map: 1;
+	--z-dock: 10;
+	--z-page: 20;
+	--z-header: 30;
+	--z-modal: 40;
+	--z-toast: 50;
+	--z-splash: 60;
+
+	--header-height: calc(var(--base) * 2.5);
+
+	--shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+	--shadow-md: 0 2px 8px rgb(0 0 0 / 0.12), 0 1px 3px rgb(0 0 0 / 0.08);
+	--shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 10px 10px -5px rgb(0 0 0 / 0.04);
+
+	--max-width-content: calc(var(--xxxxl) * 8);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	:root {
+		--fast: 0.01ms;
+		--normal: 0.01ms;
+		--slow: 0.01ms;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
